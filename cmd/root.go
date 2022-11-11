@@ -13,8 +13,8 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "secret-management",
-	Short: "A brief description of your application",
+	Use:   "secret-sharing",
+	Short: "A utility to create/read secrets.",
 	Long:  ``,
 }
 
@@ -34,7 +34,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.secret-management.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.secret-sharing.yaml)")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -50,7 +50,7 @@ func initConfig() {
 		// Search config in home directory with name ".secret-management" (without extension).
 		viper.AddConfigPath(home)
 		viper.SetConfigType("yaml")
-		viper.SetConfigName(".secret-management")
+		viper.SetConfigName(".secret-sharing")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match
