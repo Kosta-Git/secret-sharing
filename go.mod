@@ -1,4 +1,4 @@
-module secret-sharing
+module github.com/Kosta-Git/secret-sharing
 
 go 1.19
 

@@ -3,13 +3,13 @@ package cmd
 import (
 	"encoding/base64"
 	"fmt"
+	"github.com/Kosta-Git/secret-sharing/cryptography"
+	aesHelper "github.com/Kosta-Git/secret-sharing/cryptography/aes"
+	rsaHelper "github.com/Kosta-Git/secret-sharing/cryptography/rsa"
+	"github.com/Kosta-Git/secret-sharing/cryptography/shamir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"os"
-	"secret-sharing/cryptography"
-	aesHelper "secret-sharing/cryptography/aes"
-	rsaHelper "secret-sharing/cryptography/rsa"
-	"secret-sharing/cryptography/shamir"
 	"strings"
 )
 

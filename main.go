@@ -1,6 +1,6 @@
 package main
 
-import "secret-sharing/cmd"
+import "github.com/Kosta-Git/secret-sharing/cmd"
 
 func main() {
 	cmd.Execute()
